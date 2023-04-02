@@ -1,0 +1,235 @@
+$primary-color : rgb(244, 147, 147);
+$secondary-color : #f6f8fa;
+$third-color : rgb(227, 252, 255);
+
+@font-face {
+    font-family: "jazzy";
+    src: url('../font/Let\'sJazz-UnicaseFreebie.otf') format("opentype");
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+    scrollbar-width: none;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.banner {
+    top: 0;
+    position: sticky;
+    width: 100vw;
+    height: 15vh;
+    background-color: $secondary-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    nav {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 50vw;
+
+        h1 {
+            display: flex;
+            flex-wrap: nowrap;
+            font-size: 3vw;
+            font-family: "jazzy";
+        }
+
+        div {
+            height: inherit;
+            width: 10%;
+            margin-top: 3vh;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+
+                img {
+                    margin-top: 0.5vh;
+                    display: flex;
+                    flex-flow: column wrap;
+                    width: 30%;
+                    height: 50%;
+                    object-fit: fill;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    border: solid 1px black;
+    position: fixed;
+    background-color: $primary-color;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    button {
+        background-color: $primary-color;
+        color: black;
+        font-family: "jazzy";
+        font-weight: bold;
+        border-style: none;
+        width: 15vw;
+        height: 8vh;
+        font-size: 3vh;
+
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 10%);
+        }
+
+        &:disabled {
+            background-color: darken($color: $primary-color, $amount: 15%);
+        }
+
+        &:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+        }
+    }
+}
+
+main {
+    background-color: $third-color;
+}
+
+.progressBar {
+    margin-top: 8.1vh;
+    position: fixed;
+    width: 120vw;
+}
+
+/* The progress container (grey background) */
+.progress-container {
+    margin-left: -15vw;
+    width: 120vw;
+    height: 1.5vh;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+    border: solid 1px black;
+    height: 1.5vh;
+    background: #04AA6D;
+    border-radius: 15px 15px;
+}
+
+.paragraphe {
+    padding-top: 45vh;
+    padding-bottom: 20vh;
+    object-fit: cover;
+    color: black;
+    object-position: center;
+    width: 100%;
+    height: 30vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'jazzy';
+    list-style: none;
+
+    &__topParagraphe {
+        width: 50%;
+        text-align: center;
+        color: rgb(244, 147, 147);
+        font-size: 4vh;
+    }
+
+    &__bottomParagraphe {
+        color: rgb(125, 125, 196);
+        font-size: 2.5vh;
+        text-align: center;
+        width: 65%;
+    }
+}
+
+.realisationParagraphe {
+    padding-top: 45vh;
+    padding-bottom: 20vh;
+    object-fit: cover;
+    color: black;
+    object-position: center;
+    width: 100%;
+    height: 30vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'jazzy';
+    list-style: none;
+}
+
+.downloadHandler {
+    margin-top: 20px;
+    height: 64px;
+    text-align: center;
+
+    &__downloadButton {
+        font-family: "jazzy";
+        border: none;
+        font-size: x-large;
+        padding: 0 55px;
+        margin-top: 5vh;
+        background-color: $primary-color;
+        color: $secondary-color;
+
+        &:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6), inset 2px 2px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        &:hover {
+            background-color: darken($color: $primary-color, $amount: 10);
+        }
+    }
+}
+
+footer {
+    height: 100%;
+    font-size: 2vh;
+    font-family: "jazzy";
+    background-color: $third-color;
+    text-align: center;
+
+    hr {
+        width: 20%;
+        height: 1px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        background-color: darken($color: $primary-color, $amount: 20);
+        border: 0 none;
+    }
+
+    p {
+        color: darken($color: $primary-color, $amount: 20);
+    }
+
+    svg {
+        height: 30%;
+
+        g {
+            stroke: darken($color: $primary-color, $amount: 20);
+        }
+    }
+}
