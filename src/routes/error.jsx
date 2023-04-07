@@ -1,4 +1,4 @@
-import Banner from "../components/Banner"
+import Header from "../components/Header"
 import Footer from "../components/footer"
 import Navbar from "../components/navbar"
 import { useRouteError } from "react-router-dom"
@@ -10,7 +10,7 @@ export default function Index() {
 
     return (
         <>
-            <Banner />
+            <Header />
             <Navbar />
             <main>
                 <div>
