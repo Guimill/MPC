@@ -2,7 +2,7 @@ export default function Banner() {
 
     return (
         <header>
-            Marion Milleret
+            <h1>Mon petit coton</h1>
         </header>
     )
 

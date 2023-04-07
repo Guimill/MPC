@@ -8,6 +8,10 @@ import './assets/style/css/style.css';
 import Root from './routes/root';
 import Index from './routes';
 import Error from './routes/error';
+import Articles from './components/content/articles';
+import Qsj from './components/content/qsj';
+import Philosophie from './components/content/philosophie';
+import Contact from './components/content/contact';
 
 const router = createBrowserRouter([
     {
@@ -20,8 +24,20 @@ const router = createBrowserRouter([
                 element: <Index />,
             },
             {
-                path: "",
-                element: <div />,
+                path: "contact",
+                element: <Contact />,
+            },
+            {
+                path: "articles",
+                element: <Articles />,
+            },
+            {
+                path: "qsj",
+                element: <Qsj />,
+            },
+            {
+                path: "philosophie",
+                element: <Philosophie />,
             }
         ]
     }
