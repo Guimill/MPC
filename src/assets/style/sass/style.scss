@@ -2,6 +2,11 @@ $primary-color: rgb(238, 219, 184);
 $secondary-color: aliceblue;
 $third-color: #fbf8f4;
 
+@font-face {
+    font-family: "vegan";
+    src: url('../font/VSP.ttf') format("opentype");
+}
+
 html {
     height: 100vh;
     width: 100vw;
@@ -18,7 +23,7 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    background-color: $third-color;
+    background-color: $secondary-color;
 }
 
 header {
@@ -30,6 +35,7 @@ header {
     align-items: center;
 
     h1 {
+        font-family: vegan;
         color: $primary-color;
         font-size: 5vh;
     }
@@ -37,7 +43,6 @@ header {
 
 .navBar {
     height: 5vh;
-    background-color: darken($color: $secondary-color, $amount: 5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,18 +53,27 @@ header {
         gap: 2vw;
         list-style: none;
 
+        img {
+            height: 2vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         button {
             height: 5vh;
             width: 8vw;
-            background-color: $primary-color;
             border: 0;
+            font-family: vegan;
+            font-size: x-large;
+            background-color: $secondary-color;
 
             &:hover {
-                background-color: darken($color: $primary-color, $amount: 10);
+                color: darken($color: $primary-color, $amount: 10);
             }
 
             &:active {
-                background-color: darken($color: $primary-color, $amount: 20);
+                color: darken($color: $primary-color, $amount: 20);
             }
         }
     }
@@ -70,7 +84,6 @@ footer {
     bottom: 0;
     width: 100vw;
     height: 5vh;
-    background-color: darken($color: $secondary-color, $amount: 5);
     display: flex;
     justify-content: center;
     align-items: center;

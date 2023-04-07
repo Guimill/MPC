@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "vegan";
+  src: url("../font/VSP.ttf") format("opentype");
+}
 html {
   height: 100vh;
   width: 100vw;
@@ -14,7 +18,7 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #fbf8f4;
+  background-color: aliceblue;
 }
 
 header {
@@ -26,13 +30,13 @@ header {
   align-items: center;
 }
 header h1 {
+  font-family: vegan;
   color: rgb(238, 219, 184);
   font-size: 5vh;
 }
 
 .navBar {
   height: 5vh;
-  background-color: #d7ecff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,17 +47,25 @@ header h1 {
   gap: 2vw;
   list-style: none;
 }
+.navBar__list img {
+  height: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navBar__list button {
   height: 5vh;
   width: 8vw;
-  background-color: rgb(238, 219, 184);
   border: 0;
+  font-family: vegan;
+  font-size: x-large;
+  background-color: aliceblue;
 }
 .navBar__list button:hover {
-  background-color: #e4c68f;
+  color: #e4c68f;
 }
 .navBar__list button:active {
-  background-color: #dab166;
+  color: #dab166;
 }
 
 footer {
@@ -61,7 +73,6 @@ footer {
   bottom: 0;
   width: 100vw;
   height: 5vh;
-  background-color: #d7ecff;
   display: flex;
   justify-content: center;
   align-items: center;
