@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="navBar">
             <div className="navBar--top">
                 <ul className="navBar__list">
-                    <li><Link to="articles"><button>Articles</button></Link></li>
+                    <li><Link to="gallery"><button>Articles</button></Link></li>
                     <li><Link to="qsj"><button>Qui suis-je</button></Link></li>
                     <li><Link to="philosophie"><button>Philosophie</button></Link></li>
                     <li><Link to="contact"><button>Contact</button></Link></li>

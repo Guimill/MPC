@@ -98,8 +98,11 @@ header {
 }
 
 footer {
+    font-family: vegan;
+    color: #fbf8f4;
+    margin-top: 5vh;
+    background-color: lighten($color: $fourth-color, $amount: 10);
     position: absolute;
-    bottom: 0;
     width: 100vw;
     height: 5vh;
     display: flex;
@@ -124,7 +127,12 @@ footer {
     }
 
     p {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
         text-overflow: ellipsis;
+        width: 25vw;
+        height: 8vh;
     }
 
     img {

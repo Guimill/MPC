@@ -1,11 +1,11 @@
-import ArticlesGallery from "../articlesGallery"
+import Card from "../card"
 
 export default function Articles() {
 
     return (
-        <>
-            <ArticlesGallery />
-        </>
+        <div>
+            <Card />
+        </div>
     )
 
 }

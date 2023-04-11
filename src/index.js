@@ -8,10 +8,11 @@ import './assets/style/css/style.css';
 import Root from './routes/root';
 import Index from './routes';
 import Error from './routes/error';
-import Articles from './components/content/articles';
 import Qsj from './components/content/qsj';
 import Philosophie from './components/content/philosophie';
 import Contact from './components/content/contact';
+import ArticlesGallery from './components/articlesGallery';
+import ArticlesCard from './components/articlesCard';
 
 const router = createBrowserRouter([
     {
@@ -28,8 +29,12 @@ const router = createBrowserRouter([
                 element: <Contact />,
             },
             {
-                path: "articles",
-                element: <Articles />,
+                path: "gallery",
+                element: <ArticlesGallery />,
+            },
+            {
+                path: "articles/:name",
+                element: <ArticlesCard />,
             },
             {
                 path: "qsj",
