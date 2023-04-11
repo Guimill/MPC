@@ -27,8 +27,10 @@ export default function ArticlesCard() {
     })
     
     return(
-         <div class="votingCard">
-            <Card name={articlesName} src={articlesSrc} description={descritptionSrc}/>
+         <div class="articles">
+             <div class="articlesCard">
+                <Card name={articlesName} src={articlesSrc} description={descritptionSrc}/>
+             </div>
          </div>
     )
 }

@@ -24,7 +24,7 @@ export const ArticlesData = [
     },
     {
         id: 2,
-        url: 'PorteTétine',
+        url: 'PorteTetine',
         name: 'Porte tétine',
         src: tetine,
         description: "Attache tétine pour bébé/enfants en bas âge, attention, la taille de l'attache peux varier en fonction de la couture, les couleurs peuvent variés par rapport aux photos."            
@@ -52,7 +52,7 @@ export const ArticlesData = [
     },
     {
         id: 6,
-        url: 'EmballageRéutilisable',
+        url: 'EmballageReutilisable',
         name: 'Emballage zéro déchets réutilisable',
         src: emballage,
         description: "Marre d'utiliser des rouleaux de cellophane ou de papier aluminium ? Voilà la solution, un tissus PUL en intérieur, idéal car imperméable, donc juste un coup d'éponge en rentrant à la maison et hop ça repart pour un tour, un jolis coton Vichy en extérieur pour un côté pique-nique. Des languettes de scratchs pour que ce soit accessible à tout le monde, même les personnes ayant des douleurs aux doigts."    
@@ -80,21 +80,21 @@ export const ArticlesData = [
     },
     {
         id: 10,
-        url: 'PorteServietteHygiénique',
+        url: 'PorteServietteHygienique',
         name: 'Porte serviette hygiénique',
         src: serviette,
         description: "Vous ne savez pas comment transporter vos serviettes hygiéniques ? Voilà ma version ! Elle possède deux compartiments, le premier est ouvert, pour les serviettes propres, la seconde est fermée avec une fermeture éclaire, l'intérieur est en PUL, un tissus étanche pour éviter les fuites dans votre sac ! Vous pouvez passez un coup d'eau quand vous rentrez et le laissez sécher à l'envers pour pouvoir l'utiliser de nouveau le lendemain, joli et pratique !"            
     },
     {
         id: 11,
-        url: 'SachetCongélation',
+        url: 'SachetCongelation',
         name: 'Sachet congélation',
         src: congelation,
         description: "Une alternative aux sacs de congélations en plastique, ces sacs là sont en PUL, un tissus étanche, vous pouvez aussi les utiliser pour conserver vos fruits et légumes dans le frigo, "            
     },
     {
         id: 12,
-        url: 'ServietteHygiénique',
+        url: 'ServietteHygienique',
         name: 'Serviette hygiénique',
         src: sh,
         description: "Serviettes hygiénique en coton bio, une couche de PUL pour éviter les fuites, tout comme les serviettes jetable, il est préférable de ne pas les garder plus de 7/8H sur soit."            

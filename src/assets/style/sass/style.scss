@@ -8,10 +8,8 @@ $fourth-color: #639787;
     src: url('../font/VSP.ttf') format("opentype");
 }
 
-@mixin tittleFont($shadow) {
-    font-family: vegan;
-    color: $fourth-color;
-    text-shadow: (-$shadow) 0 #fefefe, 0 ($shadow) #fefefe, ($shadow) 0 #fefefe, 0 (-$shadow) #fefefe;
+@mixin tittleFont($shadow, $color) {
+    text-shadow: (-$shadow) 0 $color, 0 ($shadow) $color, ($shadow) 0 $color, 0 (-$shadow) $color;
 }
 
 html {
@@ -41,10 +39,15 @@ header {
     justify-content: center;
     align-items: center;
 
-    p {
-        @include tittleFont(4px);
-        font-size: 2vh;
+    a {
+        text-decoration: none;
+    }
 
+    p {
+        color: $fourth-color;
+        @include tittleFont(4px, $third-color);
+        font-size: 2vh;
+        font-family: vegan;
 
         h2 {
             margin-left: 35px;
@@ -79,12 +82,14 @@ header {
         }
 
         button {
+            font-family: vegan;
             height: 5vh;
             width: 8vw;
             border: 0;
             font-size: x-large;
             background-color: $secondary-color;
-            @include tittleFont(2px);
+            color: $fourth-color;
+            @include tittleFont(2px, $third-color);
 
             &:hover {
                 color: darken($color: $primary-color, $amount: 10);
@@ -118,26 +123,64 @@ footer {
     gap: 2vw;
     margin-top: 5vh;
 
+
     a {
+        width: 20vw;
         text-align: center;
         text-decoration: none;
         color: $fourth-color;
         font-family: vegan;
         font-size: larger;
+
+        h2 {
+            overflow-wrap: break-word;
+            text-align: center;
+        }
     }
 
     p {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
+        text-align: center;
         text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
         width: 25vw;
         height: 8vh;
+        color: $third-color;
+        @include tittleFont(2px, $fourth-color);
+        white-space: pre-wrap;
     }
 
     img {
         border: solid 5px;
         border-radius: 20px;
         width: 25vw;
+    }
+}
+
+.articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-top: 5vh;
+}
+
+.articlesCard {
+    width: 60vw;
+    text-align: center;
+
+    h2 {
+        font-family: vegan;
+        font-size: 4vh;
+        color: #639787;
+    }
+
+    p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: x-large;
+    }
+
+    img {
+        width: 40vw;
     }
 }
