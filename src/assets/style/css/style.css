@@ -43,7 +43,7 @@ header h1 {
 }
 .navBar__list {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   gap: 2vw;
   list-style: none;
 }
