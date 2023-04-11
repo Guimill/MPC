@@ -1,5 +1,5 @@
 $primary-color: rgb(238, 219, 184);
-$secondary-color: #ceecff;
+$secondary-color: #cdecff;
 $third-color: #fbf8f4;
 $fourth-color: #639787;
 
@@ -29,6 +29,10 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: $secondary-color;
+}
+
+main {
+    background-color: $third-color;
 }
 
 header {
@@ -121,7 +125,8 @@ footer {
     align-items: center;
     flex-flow: row wrap;
     gap: 2vw;
-    margin-top: 5vh;
+    background-color: $third-color;
+    padding-top: 5vh;
 
 
     a {
