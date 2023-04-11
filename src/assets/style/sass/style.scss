@@ -1,10 +1,17 @@
 $primary-color: rgb(238, 219, 184);
-$secondary-color: aliceblue;
+$secondary-color: #ceecff;
 $third-color: #fbf8f4;
+$fourth-color: #639787;
 
 @font-face {
     font-family: "vegan";
     src: url('../font/VSP.ttf') format("opentype");
+}
+
+@mixin tittleFont($shadow) {
+    font-family: vegan;
+    color: $fourth-color;
+    text-shadow: (-$shadow) 0 #fefefe, 0 ($shadow) #fefefe, ($shadow) 0 #fefefe, 0 (-$shadow) #fefefe;
 }
 
 html {
@@ -34,18 +41,27 @@ header {
     justify-content: center;
     align-items: center;
 
-    h1 {
-        font-family: vegan;
-        color: $primary-color;
-        font-size: 5vh;
+    p {
+        @include tittleFont(4px);
+        font-size: 2vh;
+
+
+        h2 {
+            margin-left: 35px;
+        }
     }
 }
 
 .navBar {
-    height: 5vh;
+    height: 10vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    &--top {
+        margin-bottom: 1vh;
+    }
 
     &__list {
         display: flex;
@@ -53,8 +69,10 @@ header {
         gap: 2vw;
         list-style: none;
 
+
         img {
-            height: 2vw;
+            filter: contrast(5%) invert(30%) sepia(80%) hue-rotate(115deg);
+            height: 1.5vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -64,9 +82,9 @@ header {
             height: 5vh;
             width: 8vw;
             border: 0;
-            font-family: vegan;
             font-size: x-large;
             background-color: $secondary-color;
+            @include tittleFont(2px);
 
             &:hover {
                 color: darken($color: $primary-color, $amount: 10);
@@ -87,4 +105,31 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.articlesGallery {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 2vw;
+    margin-top: 5vh;
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: $fourth-color;
+        font-family: vegan;
+        font-size: larger;
+    }
+
+    p {
+        text-overflow: ellipsis;
+    }
+
+    img {
+        border: solid 5px;
+        border-radius: 20px;
+        width: 25vw;
+    }
 }

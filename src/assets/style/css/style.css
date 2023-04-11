@@ -18,28 +18,36 @@ html {
 body {
   width: 100vw;
   height: 100vh;
-  background-color: aliceblue;
+  background-color: #ceecff;
 }
 
 header {
-  background-color: aliceblue;
+  background-color: #ceecff;
   width: 100vw;
   height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-header h1 {
+header p {
   font-family: vegan;
-  color: rgb(238, 219, 184);
-  font-size: 5vh;
+  color: #639787;
+  text-shadow: -4px 0 #fefefe, 0 4px #fefefe, 4px 0 #fefefe, 0 -4px #fefefe;
+  font-size: 2vh;
+}
+header p h2 {
+  margin-left: 35px;
 }
 
 .navBar {
-  height: 5vh;
+  height: 10vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.navBar--top {
+  margin-bottom: 1vh;
 }
 .navBar__list {
   display: flex;
@@ -48,7 +56,8 @@ header h1 {
   list-style: none;
 }
 .navBar__list img {
-  height: 2vw;
+  filter: contrast(5%) invert(30%) sepia(80%) hue-rotate(115deg);
+  height: 1.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,9 +66,11 @@ header h1 {
   height: 5vh;
   width: 8vw;
   border: 0;
-  font-family: vegan;
   font-size: x-large;
-  background-color: aliceblue;
+  background-color: #ceecff;
+  font-family: vegan;
+  color: #639787;
+  text-shadow: -2px 0 #fefefe, 0 2px #fefefe, 2px 0 #fefefe, 0 -2px #fefefe;
 }
 .navBar__list button:hover {
   color: #e4c68f;
@@ -76,4 +87,28 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.articlesGallery {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 2vw;
+  margin-top: 5vh;
+}
+.articlesGallery a {
+  text-align: center;
+  text-decoration: none;
+  color: #639787;
+  font-family: vegan;
+  font-size: larger;
+}
+.articlesGallery p {
+  text-overflow: ellipsis;
+}
+.articlesGallery img {
+  border: solid 5px;
+  border-radius: 20px;
+  width: 25vw;
 }/*# sourceMappingURL=style.css.map */
