@@ -60,11 +60,16 @@ header {
 }
 
 .navBar {
-    height: 10vh;
+    height: 15vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    background:
+        linear-gradient(315deg, $third-color 25%, transparent 25%),
+        linear-gradient(45deg, $third-color 25%, transparent 25%);
+    background-size: 20px 100%;
+    background-color: $secondary-color;
 
     &--top {
         margin-bottom: 1vh;
@@ -109,14 +114,17 @@ header {
 footer {
     font-family: vegan;
     color: #fbf8f4;
-    margin-top: 5vh;
-    background-color: lighten($color: $fourth-color, $amount: 10);
     position: absolute;
     width: 100vw;
-    height: 5vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    background:
+        linear-gradient(235deg, $third-color 25%, transparent 25%),
+        linear-gradient(125deg, $third-color 25%, transparent 25%);
+    background-size: 20px 100%;
+    background-color: $secondary-color;
 }
 
 .articlesGallery {
@@ -127,6 +135,7 @@ footer {
     gap: 2vw;
     background-color: $third-color;
     padding-top: 5vh;
+    padding-bottom: 5vh;
 
 
     a {
