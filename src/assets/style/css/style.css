@@ -53,7 +53,7 @@ header p h2 {
   justify-content: start;
   align-items: center;
   background: linear-gradient(315deg, #fbf8f4 25%, transparent 25%), linear-gradient(45deg, #fbf8f4 25%, transparent 25%);
-  background-size: 20px 100%;
+  background-size: 25px 100%;
   background-color: #cdecff;
 }
 .navBar--top {
@@ -62,20 +62,17 @@ header p h2 {
 .navBar__list {
   display: flex;
   flex-flow: row wrap;
-  gap: 2vw;
+  gap: 1vw;
   list-style: none;
 }
 .navBar__list img {
   filter: contrast(5%) invert(30%) sepia(80%) hue-rotate(115deg);
-  height: 1.5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 1.8vw;
 }
 .navBar__list button {
   font-family: vegan;
   height: 5vh;
-  width: 8vw;
+  width: 15vw;
   border: 0;
   font-size: x-large;
   background-color: #cdecff;
@@ -99,7 +96,7 @@ footer {
   justify-content: center;
   align-items: end;
   background: linear-gradient(235deg, #fbf8f4 25%, transparent 25%), linear-gradient(125deg, #fbf8f4 25%, transparent 25%);
-  background-size: 20px 100%;
+  background-size: 25px 100%;
   background-color: #cdecff;
 }
 
@@ -113,33 +110,40 @@ footer {
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
-.articlesGallery a {
-  width: 20vw;
+.articlesGallery div {
+  width: 25vw;
+}
+.articlesGallery div:hover {
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px 3px #e6e6e6;
+}
+.articlesGallery div a {
   text-align: center;
   text-decoration: none;
   color: #639787;
   font-family: vegan;
   font-size: larger;
 }
-.articlesGallery a h2 {
+.articlesGallery div a h2 {
   overflow-wrap: break-word;
   text-align: center;
+  text-shadow: -0.5px 0 #cdecff, 0 0.5px #cdecff, 0.5px 0 #cdecff, 0 -0.5px #cdecff;
 }
-.articlesGallery p {
+.articlesGallery div p {
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 25vw;
+  width: 95%;
   height: 8vh;
   color: #fbf8f4;
-  text-shadow: -2px 0 #639787, 0 2px #639787, 2px 0 #639787, 0 -2px #639787;
   white-space: pre-wrap;
+  color: #639787;
 }
-.articlesGallery img {
+.articlesGallery div img {
   border: solid 5px;
   border-radius: 20px;
-  width: 25vw;
+  width: 95%;
 }
 
 .articles {
@@ -147,7 +151,7 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100vw;
-  margin-top: 5vh;
+  padding: 5vh 0 5vh;
 }
 
 .articlesCard {

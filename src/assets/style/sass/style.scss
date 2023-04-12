@@ -65,10 +65,9 @@ header {
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background:
-        linear-gradient(315deg, $third-color 25%, transparent 25%),
+    background: linear-gradient(315deg, $third-color 25%, transparent 25%),
         linear-gradient(45deg, $third-color 25%, transparent 25%);
-    background-size: 20px 100%;
+    background-size: 25px 100%;
     background-color: $secondary-color;
 
     &--top {
@@ -78,22 +77,18 @@ header {
     &__list {
         display: flex;
         flex-flow: row wrap;
-        gap: 2vw;
+        gap: 1vw;
         list-style: none;
-
 
         img {
             filter: contrast(5%) invert(30%) sepia(80%) hue-rotate(115deg);
-            height: 1.5vw;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            height: 1.8vw;
         }
 
         button {
             font-family: vegan;
             height: 5vh;
-            width: 8vw;
+            width: 15vw;
             border: 0;
             font-size: x-large;
             background-color: $secondary-color;
@@ -123,7 +118,7 @@ footer {
     background:
         linear-gradient(235deg, $third-color 25%, transparent 25%),
         linear-gradient(125deg, $third-color 25%, transparent 25%);
-    background-size: 20px 100%;
+    background-size: 25px 100%;
     background-color: $secondary-color;
 }
 
@@ -137,38 +132,47 @@ footer {
     padding-top: 5vh;
     padding-bottom: 5vh;
 
+    div {
+        width: 25vw;
 
-    a {
-        width: 20vw;
-        text-align: center;
-        text-decoration: none;
-        color: $fourth-color;
-        font-family: vegan;
-        font-size: larger;
+        &:hover {
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px 3px darken($color: white, $amount: 10);
+        }
 
-        h2 {
-            overflow-wrap: break-word;
+        a {
             text-align: center;
+            text-decoration: none;
+            color: $fourth-color;
+            font-family: vegan;
+            font-size: larger;
+
+            h2 {
+                overflow-wrap: break-word;
+                text-align: center;
+                @include tittleFont(.5px, $secondary-color)
+            }
+        }
+
+        p {
+            text-align: center;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 95%;
+            height: 8vh;
+            color: $third-color;
+            white-space: pre-wrap;
+            color: $fourth-color;
+        }
+
+        img {
+            border: solid 5px;
+            border-radius: 20px;
+            width: 95%;
         }
     }
 
-    p {
-        text-align: center;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        width: 25vw;
-        height: 8vh;
-        color: $third-color;
-        @include tittleFont(2px, $fourth-color);
-        white-space: pre-wrap;
-    }
-
-    img {
-        border: solid 5px;
-        border-radius: 20px;
-        width: 25vw;
-    }
 }
 
 .articles {
@@ -176,7 +180,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-top: 5vh;
+    padding: 5vh 0 5vh;
 }
 
 .articlesCard {
