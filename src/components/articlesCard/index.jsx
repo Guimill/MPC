@@ -1,5 +1,4 @@
 import { useLocation } from 'react-router-dom';
-import Card from '../card';
 import { ArticlesData } from '../../data/articlesData';
 
 export default function ArticlesCard() {
@@ -22,14 +21,22 @@ export default function ArticlesCard() {
         return articles.src
     })
 
-    const descritptionSrc = articlesData.map(articles => {
+    const articlesDescription = articlesData.map(articles => {
         return articles.description
+    })
+
+    const articlesEntretien = articlesData.map(articles => {
+        return articles.entretien
     })
     
     return(
          <div class="articles">
              <div class="articlesCard">
-                <Card name={articlesName} src={articlesSrc} description={descritptionSrc}/>
+                <img src={articlesSrc} alt={articlesName} />
+             </div>
+             <div>
+                <p>{articlesDescription}</p> <br /><hr /><br />
+                <p>{articlesEntretien}</p>
              </div>
          </div>
     )

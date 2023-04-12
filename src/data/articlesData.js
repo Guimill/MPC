@@ -20,6 +20,8 @@ export const ArticlesData = [
         url: 'BavoirsBandana',
         name: 'Bavoirs bandana',
         src: bavoir,
+        price: 6.5,
+        entretien: "Lavage 30/40° cycle coton Séchage possible au sèche linge en température faible Repassage possible, attention aux étiquettes, boutons pression et aux élastiques afin de ne pas les faire fondre",
         description: "Des petits bavoirs quand vos bambins commencerons à vouloir tâcher leurs beau vêtements avec de la salive, ils sont en éponge bamboo et en nid d'abeille suivant ce que vous souhaitez pour vos petits. Les bandanas éléphants sont les seuls avec une attache différente, les autres s'attachent avec des boutons pressions. "    
     },
     {
@@ -27,6 +29,8 @@ export const ArticlesData = [
         url: 'PorteTetine',
         name: 'Porte tétine',
         src: tetine,
+        price: 12,
+        entretien: "Lavage à la main avec un savon doux Séchage à l'air libre Attention au bois, ne pas le laisser trop longtemps mouillé de risque qu'il ne gonfle",
         description: "Attache tétine pour bébé/enfants en bas âge, attention, la taille de l'attache peux varier en fonction de la couture, les couleurs peuvent variés par rapport aux photos."            
     },
     {
@@ -34,6 +38,8 @@ export const ArticlesData = [
         url: 'BavoirsAutonomes',
         name: 'Bavoirs autonomes',
         src: bavoireAutonome,
+        price: 8.5,
+        entretien: "Lavage 30/40° cycle coton Séchage possible au sèche linge en température faible Repassage possible, attention aux étiquettes, boutons pression et aux élastiques afin de ne pas les faire fondre",
         description: "Bavoirs autonomes pour bébés et jeunes enfants, grâce à l'élastique, vous aurez une facilité à l'enfilé sur la tête de votre enfant, et une fois que votre enfant aura grandis, il pourra apprendre à l'enfiler tout seul comme un grand ! ce qui permettra un boost de confidence. Inspiré par les méthodes Montessori, Les couleurs peuvent différé légèrement de la photo et de la qualité de votre écran. Passable au lavage, repassage possible, attention, repasser uniquement le côté tissus, ne pas repasser le côté éponge et l'élastique."            
     },
     {
@@ -41,6 +47,8 @@ export const ArticlesData = [
         url: 'Chouchous',
         name: 'Chouchous',
         src: chouchou,
+        price: 3,
+        entretien: "Lavage 30/40° cycle coton ou à la main Séchage possible au sèche-linge Repassage possible, mais non utile pour ce genre d'article",
         description: "Chouchous/ Scrunchies à l'unité, diverses variante, en satin pour plus de douceur pour vos cheveux, classique en coton, pensez à bien laver vos chouchous, nous n'y pensons jamais assez mais la saleté qui se trouve sur vos cheveux se retrouvera sur le tissus ! un lavage à 40° suffira amplement. "            
     },
     {
@@ -48,6 +56,8 @@ export const ArticlesData = [
         url: 'CotonsLavable',
         name: 'Cotons lavable',
         src: cotons,
+        price: 6,
+        entretien: "Lavage 30/40° cycle coton Séchage possible au sèche-linge Repassage possible",
         description: "Lots de 5 cotons lavable en coton éponge bamboo, ce tissus est très doux pour le visage, Pour éviter d'avoir des coton tâchés à cause du maquillage, passez un coup de véritable savon de marseille, il nettoiera en douceur vos cotons sans produits chimiques qui finirait sur votre visage. Les lots de 4 grands cotons sont fait pour les personnes comme moi qui préfèrent avoir plus de matière dans la main."    
     },
     {
@@ -55,6 +65,8 @@ export const ArticlesData = [
         url: 'EmballageReutilisable',
         name: 'Emballage zéro déchets réutilisable',
         src: emballage,
+        price: 8,
+        entretien: "Lavage 30/40° cycle coton Séchage à l'air libre de préférence, ou à température basse au sèche-linge Attention : Ne pas repasser, le tissu PUL risque de fondre",
         description: "Marre d'utiliser des rouleaux de cellophane ou de papier aluminium ? Voilà la solution, un tissus PUL en intérieur, idéal car imperméable, donc juste un coup d'éponge en rentrant à la maison et hop ça repart pour un tour, un jolis coton Vichy en extérieur pour un côté pique-nique. Des languettes de scratchs pour que ce soit accessible à tout le monde, même les personnes ayant des douleurs aux doigts."    
     },
     {
@@ -62,6 +74,8 @@ export const ArticlesData = [
         url: 'SetColoriage',
         name: 'Set pour enfant à colorier',
         src: coloriage,
+        price: 10,
+        entretien: "Lavage 30/40° cycle coton Séchage à l'air libre de préférence, ou à température basse au sèche-linge Attention : Ne pas repasser, le tissu PUL risque de fondre",
         description: "Pour occuper vos tout petit à table, ou dans le train ou dans la voiture, le set de table à colorier est là pour vous, Un grand format de 45cm sur 35cm pour pouvoir colorier même quand on a une assiette dessus, un verso en nid d'abeille, un tissus absorbant. Utilisez des feutres lavable à l'eau, et en un coup à la machine à laver, et c'est repartit pour colorier ! pensez bien à mettre une lingette anti décoloration si vous mettez des vêtements blanc en même temps dans votre machine, vous pouvez les passer au sèche linge avec le reste de vos vêtements, et vous pouvez même les repasser"            
     },
     {
@@ -69,6 +83,8 @@ export const ArticlesData = [
         url: 'PochetteLivre',
         name: 'Pochette à livre',
         src: livre,
+        price: 15,
+        entretien: "Lavage 30/40° cycle coton Séchage à l'air libre de préférence, ou à température basse au sèche-linge Attention : Ne pas repasser, le tissu PUL risque de fondre",
         description: "Protégez vos livres préférés pendant vos déplacements avec une jolie pochette rembourrée, Vous pouvez y mettre jusqu'à 4 mangas, des livres épais et des livres grands format. L'intérieur et l'extérieur sont en coton, entre les deux couches de cotons se trouve du rembourrage pour plus de protection, une ouverture à scratch pour que ce soit même utilisable par les personnes à mobilité réduite ou avec des problèmes de douleurs dans les mains."            
     },
     {
@@ -76,6 +92,8 @@ export const ArticlesData = [
         url: 'PorteCouverts',
         name: 'Porte couverts',
         src: couvert,
+        price: 11.5,
+        entretien: "Lavage 30/40° cycle coton Séchage possible au sèche-linge à température basse, de préférence à l'air libre Attention : Ne pas repasser, le tissu PUL risque de fondre",
         description: "Des jolis portes couverts pour pouvoir apporter votre repas partout sans salir votre sac, La version en tissus abeille est destinée aux couverts pour enfants, l'extérieur est en coton, l'intérieur est en PUL, un tissus étanche, comme ça même si vos couverts sont mouillés, votre porte couvert restera sec."            
     },
     {
@@ -83,6 +101,8 @@ export const ArticlesData = [
         url: 'PorteServietteHygienique',
         name: 'Porte serviette hygiénique',
         src: serviette,
+        price: 16,
+        entretien: "Lavage 30/40° cycle coton Séchage à l'air libre  Attention : Ne pas repasser, le tissu PUL risque de fondre",
         description: "Vous ne savez pas comment transporter vos serviettes hygiéniques ? Voilà ma version ! Elle possède deux compartiments, le premier est ouvert, pour les serviettes propres, la seconde est fermée avec une fermeture éclaire, l'intérieur est en PUL, un tissus étanche pour éviter les fuites dans votre sac ! Vous pouvez passez un coup d'eau quand vous rentrez et le laissez sécher à l'envers pour pouvoir l'utiliser de nouveau le lendemain, joli et pratique !"            
     },
     {
@@ -90,6 +110,8 @@ export const ArticlesData = [
         url: 'SachetCongelation',
         name: 'Sachet congélation',
         src: congelation,
+        price: 3.5,
+        entretien: "Lavage 30/40° cycle coton ou à la main Séchage à l'air libre préférable Attention : ne pas repasser, le tissu PUL risque de fondre",
         description: "Une alternative aux sacs de congélations en plastique, ces sacs là sont en PUL, un tissus étanche, vous pouvez aussi les utiliser pour conserver vos fruits et légumes dans le frigo, "            
     },
     {
@@ -97,6 +119,8 @@ export const ArticlesData = [
         url: 'ServietteHygienique',
         name: 'Serviette hygiénique',
         src: sh,
+        price: 9,
+        entretien: "Lavage 30/40° cycle coton Séchage à l'air libre de préférence Attention : Ne pas repasser, le tissu PUL risque de fondre",
         description: "Serviettes hygiénique en coton bio, une couche de PUL pour éviter les fuites, tout comme les serviettes jetable, il est préférable de ne pas les garder plus de 7/8H sur soit."            
     },
 ]
