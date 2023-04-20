@@ -16,6 +16,20 @@
     transform: rotate(-2deg);
   }
 }
+@keyframes slidein {
+  from {
+    transform: scaleX(1.5);
+    margin-left: 10%;
+  }
+  50% {
+    transform: scaleX(1.5);
+    margin-left: 20%;
+  }
+  to {
+    transform: scaleX(1.5);
+    margin-left: 10%;
+  }
+}
 html {
   height: 100vh;
   width: 100vw;
@@ -118,6 +132,7 @@ footer {
   background: linear-gradient(235deg, #fbf8f4 25%, transparent 25%), linear-gradient(125deg, #fbf8f4 25%, transparent 25%);
   background-size: 25px 100%;
   background-color: #cdecff;
+  animation: linear 15s infinite slidein;
 }
 
 .articlesGallery {
